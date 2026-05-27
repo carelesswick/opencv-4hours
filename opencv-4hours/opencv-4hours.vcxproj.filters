@@ -21,7 +21,7 @@
     <ClCompile Include="cameratest.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Chapter3.cpp">
+    <ClCompile Include="Chapter6.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
