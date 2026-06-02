@@ -14,7 +14,7 @@ void main ()
 	Mat img = imread(path);
 	Mat imgGray, imgBlur, imgCanny, imgDia, imgErode;
 	cvtColor(img, imgGray, COLOR_BGR2GRAY);
-	GaussianBlur(img, imgBlur, Size(3,3), 5, 0);//高斯模糊
+	GaussianBlur(imgGray, imgBlur, Size(3,3), 5, 0);//高斯模糊
 	Canny(imgBlur, imgCanny, 5, 75);//Canny边缘检测
 
 	//该函数会构建并返回一个结构元素，该元素可进一步传递给 #erode、#dilate 或 #morphologyEx 函数
