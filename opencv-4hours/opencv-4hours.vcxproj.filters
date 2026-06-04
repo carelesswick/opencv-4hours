@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="变暗处理.cpp">
+    <ClCompile Include="chapeter8.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

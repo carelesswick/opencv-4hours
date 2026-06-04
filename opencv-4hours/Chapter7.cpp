@@ -48,14 +48,18 @@ void getContours(Mat imgput,Mat imgdraw) {
 					objname = "triangle";
 					break;
 				case 4:
-					objname = "rectangle";
+				{
+					float square = (float)boundRect[i].width / (float)boundRect[i].height;
+					if (square > 0.95 && square < 1.05) { objname = "square"; }
+					else { objname = "rectangle"; }
 					break;
+				}
 				default:
 					objname = "circle";
 					break;
 
 			}
-			putText(imgdraw, objname, {boundRect[i].x,boundRect[i].y - 5}, FONT_HERSHEY_SCRIPT_SIMPLEX, 0.3, Scalar(0, 69, 255), 2);
+			putText(imgdraw, objname, {boundRect[i].x,boundRect[i].y - 5}, FONT_HERSHEY_SCRIPT_SIMPLEX, 0.8, Scalar(0, 69, 255), 1);
 		}
 	}
 }

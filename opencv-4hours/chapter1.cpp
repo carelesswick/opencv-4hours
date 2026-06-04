@@ -1,6 +1,6 @@
-#include <opencv2/imgcodecs.hpp>
-#include <opencv2/highgui.hpp>
-#include <opencv2/imgproc.hpp>
+#include <opencv2/imgcodecs.hpp>// 图像读取与写入
+#include <opencv2/highgui.hpp>// 显示图像、滑动条等GUI
+#include <opencv2/imgproc.hpp>// 图像处理（画矩形、缩放等）
 #include <iostream>
 
 
